@@ -1,7 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=7,8,9" />
+<meta name="viewport" content="initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
 <title>Recorrido Móvil - Domicilio</title>
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
@@ -114,7 +115,7 @@ function showDistanceTime(latMov,lngMov,latDom,lngDom,distancia,tiempo) {
 
 	var boxText = document.createElement("div");
 	boxText.style.cssText = "border: 2px solid black; margin-top: 8px; background: white; text-align:center ;font-weight:bold; height:60px; padding: 5px;";
-	boxText.innerHTML = "M&oacute;vil: "+ obtP('numMov')+"<br> Distancia Faltante: "+distancia+"<br> Tiempo Faltante: "+tiempo;
+	boxText.innerHTML = "M&oacute;vil: "+ obtP('numMov')+".<br> Distancia Faltante: "+ distancia +" km. <br> Tiempo Faltante: "+tiempo + " minutos.";
 
 	var myOptions = {
 			 content: boxText
